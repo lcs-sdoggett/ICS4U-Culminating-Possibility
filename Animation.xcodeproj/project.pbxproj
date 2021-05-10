@@ -14,6 +14,9 @@
 		7DB1AF902645BAD60052DFFC /* scott-berry-tree.json in Resources */ = {isa = PBXBuildFile; fileRef = 7DB1AF8E2645BAD50052DFFC /* scott-berry-tree.json */; };
 		7DB1AF912645BAD60052DFFC /* gordon-basic-branching-tree.json in Resources */ = {isa = PBXBuildFile; fileRef = 7DB1AF8F2645BAD60052DFFC /* gordon-basic-branching-tree.json */; };
 		7DB1AF942645C43A0052DFFC /* aidan-berry-bush.json in Resources */ = {isa = PBXBuildFile; fileRef = 7DB1AF932645C43A0052DFFC /* aidan-berry-bush.json */; };
+		7DDC43BF2649751A00B3F428 /* gordon-short-branching-tree.json in Resources */ = {isa = PBXBuildFile; fileRef = 7DDC43BE2649751A00B3F428 /* gordon-short-branching-tree.json */; };
+		7DDC43C32649752600B3F428 /* sihan-tree.json in Resources */ = {isa = PBXBuildFile; fileRef = 7DDC43C12649752500B3F428 /* sihan-tree.json */; };
+		7DDC43C42649752600B3F428 /* victoria-bush.json in Resources */ = {isa = PBXBuildFile; fileRef = 7DDC43C22649752600B3F428 /* victoria-bush.json */; };
 		81064A0A1C130A10007ED524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81064A091C130A10007ED524 /* AppDelegate.swift */; };
 		81064A0C1C130A10007ED524 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81064A0B1C130A10007ED524 /* ViewController.swift */; };
 		81064A0E1C130A10007ED524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81064A0D1C130A10007ED524 /* Assets.xcassets */; };
@@ -70,6 +73,9 @@
 		7DB1AF8E2645BAD50052DFFC /* scott-berry-tree.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "scott-berry-tree.json"; sourceTree = "<group>"; };
 		7DB1AF8F2645BAD60052DFFC /* gordon-basic-branching-tree.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "gordon-basic-branching-tree.json"; sourceTree = "<group>"; };
 		7DB1AF932645C43A0052DFFC /* aidan-berry-bush.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "aidan-berry-bush.json"; sourceTree = "<group>"; };
+		7DDC43BE2649751A00B3F428 /* gordon-short-branching-tree.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "gordon-short-branching-tree.json"; sourceTree = "<group>"; };
+		7DDC43C12649752500B3F428 /* sihan-tree.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sihan-tree.json"; sourceTree = "<group>"; };
+		7DDC43C22649752600B3F428 /* victoria-bush.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "victoria-bush.json"; sourceTree = "<group>"; };
 		81064A061C130A10007ED524 /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81064A091C130A10007ED524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81064A0B1C130A10007ED524 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +162,9 @@
 			children = (
 				7DB1AF8F2645BAD60052DFFC /* gordon-basic-branching-tree.json */,
 				7DB1AF932645C43A0052DFFC /* aidan-berry-bush.json */,
+				7DDC43BE2649751A00B3F428 /* gordon-short-branching-tree.json */,
+				7DDC43C12649752500B3F428 /* sihan-tree.json */,
+				7DDC43C22649752600B3F428 /* victoria-bush.json */,
 				7DB1AF8E2645BAD50052DFFC /* scott-berry-tree.json */,
 			);
 			name = SystemCatalog;
@@ -503,8 +512,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DDC43BF2649751A00B3F428 /* gordon-short-branching-tree.json in Resources */,
 				7DB1AF942645C43A0052DFFC /* aidan-berry-bush.json in Resources */,
+				7DDC43C42649752600B3F428 /* victoria-bush.json in Resources */,
 				7DB1AF912645BAD60052DFFC /* gordon-basic-branching-tree.json in Resources */,
+				7DDC43C32649752600B3F428 /* sihan-tree.json in Resources */,
 				81064A0E1C130A10007ED524 /* Assets.xcassets in Resources */,
 				81064A111C130A10007ED524 /* Main.storyboard in Resources */,
 				7DB1AF902645BAD60052DFFC /* scott-berry-tree.json in Resources */,
