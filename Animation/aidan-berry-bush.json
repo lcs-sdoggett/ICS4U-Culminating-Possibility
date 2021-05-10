@@ -81,8 +81,8 @@
   },
   "length" : 15,
   "angle" : 25,
-  "initialX" : 250,
+  "initialX" : 300,
   "initialHeading" : 90,
   "reduction" : 1.25,
-  "initialY" : 100
+  "initialY" : 40
 }

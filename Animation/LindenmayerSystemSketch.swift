@@ -12,7 +12,7 @@ class LindenmayerSystemSketch: NSObject, Sketchable {
     override init() {
         
         // Create canvas object – specify size
-        canvas = Canvas(width: 500, height: 500)
+        canvas = Canvas(width: 1000, height: 600)
         
         // Enable faster rendering
         canvas.highPerformance = true
@@ -22,11 +22,22 @@ class LindenmayerSystemSketch: NSObject, Sketchable {
 //                                           drawingOn: self.canvas)
                 
                 
-            var system = Visualizer(fromJSONFile: "aidan-berry-bush",
+        var berryBush = Visualizer(fromJSONFile: "aidan-berry-bush",
                                     drawingOn: canvas)
-        
-        system.render()
-        
+        var tree = Visualizer(fromJSONFile: "gordon-basic-branching-tree",
+                                    drawingOn: canvas)
+        var tree2 = Visualizer(fromJSONFile: "gordon-short-branching-tree",
+                                    drawingOn: canvas)
+        var tree3 = Visualizer(fromJSONFile: "sihan-tree",
+                                    drawingOn: canvas)
+
+
+
+        berryBush.render()
+        tree.render()
+        tree2.render()
+        tree3.render()
+
     }
     
     // This function runs repeatedly, forever, to create the animated effect
