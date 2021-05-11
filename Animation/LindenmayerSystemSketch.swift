@@ -17,26 +17,77 @@ class LindenmayerSystemSketch: NSObject, Sketchable {
         // Enable faster rendering
         canvas.highPerformance = true
         
-//        // Load L-system from JSONFile
-//                var basicTree = Visualizer(fromJSONFile: "gordon-basic-branching-tree",
-//                                           drawingOn: self.canvas)
-                
-                
+        // Create scene before trees
+        canvas.drawShapesWithBorders = false
+        canvas.fillColor = Color.blue
+        canvas.drawRectangle(at: Point(x: 0, y: 0), width: canvas.width, height: canvas.height)
+        canvas.fillColor = Color.green
+        canvas.drawRectangle(at: Point(x: 0, y: 0), width: canvas.width, height: canvas.height / 3)
+        canvas.drawEllipse(at: Point(x: 0, y: 200), width: 900, height: 300)
+        canvas.drawEllipse(at: Point(x: 800, y: 200), width: 900, height: 300)
+        canvas.fillColor = Color.yellow
+        canvas.drawEllipse(at: Point(x: 1000, y: 600), width: 200, height: 200)
+
+        canvas.fillColor = Color.red
+
+        
+        // Berry Bush
         var berryBush = Visualizer(fromJSONFile: "aidan-berry-bush",
                                     drawingOn: canvas)
+        berryBush.initialPosition = Point(x: 100, y: 125)
+        berryBush.render()
+
+        // Berry Bush 2
+        
+        var berryBush2 = Visualizer(fromJSONFile: "aidan-berry-bush",
+                                    drawingOn: canvas)
+        berryBush2.initialPosition = Point(x: 300, y: 80)
+        berryBush2.render()
+
+        // Tree
         var tree = Visualizer(fromJSONFile: "gordon-basic-branching-tree",
                                     drawingOn: canvas)
-        var tree2 = Visualizer(fromJSONFile: "gordon-short-branching-tree",
-                                    drawingOn: canvas)
-        var tree3 = Visualizer(fromJSONFile: "sihan-tree",
-                                    drawingOn: canvas)
-
-
-
-        berryBush.render()
+        tree.initialPosition = Point(x: 500, y: 80)
         tree.render()
+        
+        // Tree 2
+        var tree2 = Visualizer(fromJSONFile: "gordon-basic-branching-tree",
+                                    drawingOn: canvas)
+        tree2.initialPosition = Point(x: 550, y: 80)
         tree2.render()
-        tree3.render()
+
+        // Short branching tree
+        var shortTree = Visualizer(fromJSONFile: "gordon-short-branching-tree",
+                                    drawingOn: canvas)
+        shortTree.initialPosition = Point(x: 550, y: 300)
+        shortTree.render()
+        
+        // Short branching tree2
+        var shortTree2 = Visualizer(fromJSONFile: "gordon-short-branching-tree",
+                                    drawingOn: canvas)
+        shortTree2.initialPosition = Point(x: 590, y: 280)
+        shortTree2.render()
+        
+        // Short branching tree3
+        var shortTree3 = Visualizer(fromJSONFile: "gordon-short-branching-tree",
+                                    drawingOn: canvas)
+        shortTree3.initialPosition = Point(x: 570, y: 260)
+        shortTree3.render()
+
+
+        
+        // Tall tree
+        var tallTree = Visualizer(fromJSONFile: "sihan-tree",
+                                    drawingOn: canvas)
+        tallTree.initialPosition = Point(x: 700, y: 50)
+        tallTree.render()
+        
+        // Tall tree2
+        var tallTree2 = Visualizer(fromJSONFile: "sihan-tree",
+                                    drawingOn: canvas)
+        tallTree2.initialPosition = Point(x: 820, y: 80)
+        tallTree2.render()
+
 
     }
     
